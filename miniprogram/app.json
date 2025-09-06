@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/home/home",
+    "pages/board/board"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "竞赛日历",
+        "iconPath": "images/a.png",
+        "selectedIconPath": "images/c.png"
+      },
+      {
+        "pagePath": "pages/board/board",
+        "text": "蒟蒻の日常",
+        "iconPath": "images/c.png",
+        "selectedIconPath": "images/m.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "沃德牢家",
+        "iconPath": "images/m.png",
+        "selectedIconPath": "images/a.png"
+      }
+    ]
+  },
+  "navigationBarTitleText": "竞赛小岛",
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "lazyCodeLoading": "requiredComponents"
+}

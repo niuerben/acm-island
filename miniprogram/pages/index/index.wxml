@@ -1,0 +1,43 @@
+<!--pages/index/index.wxml-->
+<view>
+<!-- 创建信息表 -->
+ 
+  <view class="box" wx:for="{{contestList}}" wx:key="_id" >
+    <view class="list_contest">
+      <view class="list_contest_content">
+        <view>{{item.contestName}}</view>
+        <view>{{item.contestTime}}</view>
+      </view>
+      <view class="list_contest_delete">
+        <button
+        type="warn"
+        data-id="{{item._id}}"
+        bind:tap="deleteContestList"
+        form-type="submit"
+        size="mini"
+        >删除</button>
+      </view>
+    </view>
+  </view>
+
+  <view>提交日历</view>
+  <view class="box">
+    <view class="list_box">
+      <view class="list_submit">
+        <text>竞赛名称</text>
+        <input
+        placeholder="请输入竞赛名称"
+        bind:input="onContestName"
+        ></input>
+      </view>
+      <view class="list_submit">
+        <text>竞赛时间</text>
+        <input 
+        placeholder="请输入竞赛时间"
+        bind:input="onContestTime"
+        ></input>
+      </view>
+      <button type="primary" bind:tap="onContestList">提交</button>
+    </view>
+  </view>
+</view>
